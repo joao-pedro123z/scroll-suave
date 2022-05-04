@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll css</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        a{
+            display: inline-block;
+            width: auto;
+            text-decoration: none;
+            font-size: 1.3m;
+        }
+        nav, scroll-container{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav{
+            width:600px ;
+            padding:5px ;
+            border:1px solid blue ;
+        }
+        scroll-page{
+            border: 1px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 2em;
+            margin: 15px;
+        }
+        #topo{
+            position: absolute;
+            bottom: 15px;
+            right: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#page-1">Seção 01</a>
+        <a href="#page-2">Seção 02</a>
+        <a href="#page-3">Seção 03</a>        
+    </nav>
+    <scroll-container>
+        <scroll-page id="page-1">
+            <h2>Conteudo 01</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur consequatur, sequi consectetur esse eius dolorem, voluptas dignissimos fuga facere totam maiores quam. Magni ab qui quas rem molestiae ducimus?
+            
+            <a href="#page-1">Seçaõ 01</a>
+        </scroll-page>
+        <scroll-page id="page-2">
+            <h2>Conteudo 02</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aperiam porro libero cupiditate vero quas autem ratione. Quis cumque, libero dolores excepturi cupiditate molestias hic eveniet odio perspiciatis repellat quod?
+            <a href="#page-2">Seção 02</a>
+
+        </scroll-page>
+        <scroll-page id="page-3">
+            <h2>Conteudo 03</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro, temporibus nam deleniti sint vero earum totam soluta ea rem numquam eos dolore expedita voluptates officiis omnis, fugiat, similique quidem?
+
+            <a href="#page-3">Seção 03</a>
+        </scroll-page>
+            <a id="topo" href="#top">Home</a>
+        <scroll-container/>
+</body>
+</html>
